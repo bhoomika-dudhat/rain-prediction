@@ -1,0 +1,182 @@
+/* New CSS Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 50px;
+    text-decoration: #fff;
+}
+
+header .navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+header .navigation a:hover {
+    color: #ffd700;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.content {
+    padding: 80px 40px 40px;
+}
+img[src*="/image/"] {
+    max-width: 100px; /* Adjust this width as needed */
+}
+
+
+
+
+section {
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+.info-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 100px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header .navigation {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #222;
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navigation a {
+        margin-left: 0;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #check:checked ~ header .navigation {
+        display: flex;
+    }
+
+    .content {
+        padding-top: 140px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 100px) {
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .info h2 {
+        font-size: 26px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+}
