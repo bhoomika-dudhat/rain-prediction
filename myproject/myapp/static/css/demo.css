@@ -23,7 +23,7 @@ header {
 
 header .logo {
     font-size: 50px;
-    text-decoration: #fff;
+    text-decoration: #ffffff;
 }
 
 header .navigation a {
@@ -45,7 +45,7 @@ header .navigation a:hover {
     padding: 80px 40px 40px;
 }
 img[src*="/image/"] {
-    max-width: 100px; /* Adjust this width as needed */
+    max-width: 150px; /* Adjust this width as needed */
 }
 
 
