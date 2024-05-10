@@ -2,6 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .custom-background {
+         background: linear-gradient(#0004, #0004),
+         url('https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+         no-repeat;
+         background-size: cover;
+         min-height: 100vh;
+         width: 100vw;
+       }
+       img.chart {
+            max-width: 50%; /* Ensures the image is no wider than its container */
+            height: 50%; /* Maintains the aspect ratio of the image */
+        }
+ 
+     </style>
+     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +25,14 @@
     <link rel="stylesheet" href="{% static 'css/after_rainy.css' %}">
     <title>Rainy Day</title>
 </head>
-<body>
+<body class="custom-background">
     <div>
         {% if result == 1 %}
-            <img src="{% static 'image/4.png' %}" alt="Result 1 Image">
+            <img src="{% static 'image/4.png' %}" alt="Result 1 Image" class="chart">
         {% elif result == 2 %}
-            <img src="{% static 'image/5.png' %}" alt="Result 2 Image">
+            <img src="{% static 'image/5.png' %}" alt="Result 2 Image" class="chart">
         {% else %}
-            <img src="{% static 'image/6.png' %}" alt="Default Image">
+            <img src="{% static 'image/6.png' %}" alt="Default Image" class="chart">
         {% endif %}
     </div>
     

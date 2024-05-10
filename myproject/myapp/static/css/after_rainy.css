@@ -2,7 +2,11 @@ body {
     background-color: #0fd3dd;
     font-family: 'Poppins', sans-serif;
 }
-
+img.chart {
+    max-width: 50%; /* Ensures the image is no wider than its container */
+    height: 50%; /* Maintains the aspect ratio of the image */
+  }
+  
 h2{
     font-size: 2 rem;
     font-weight: bold;
