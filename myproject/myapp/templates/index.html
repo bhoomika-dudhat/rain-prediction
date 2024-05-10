@@ -2,18 +2,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <style>
+      .custom-background {
+          background: linear-gradient(#0004, #0004),
+          url('https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+          no-repeat;
+          background-size: cover;
+          min-height: 100vh;
+          width: 100vw;
+      }
+      header .navigation a {
+        font-size: 18px;
+        text-decoration: white;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 2px 15px;
+        border-radius: 20px;
+        transition: 0.3s;
+        transition-property: background;
+      }
+  </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainy Brain</title>
-    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
   <body>
 
-    <section>
+    <section class="custom-background">
       <input type="checkbox" id="check">
-      <header>
-        </div>
+      <header class="navigation">
+
         <h2><a href="#" class="logo">Rainy Brain</a></h2>
         <div class="navigation">
           <a href="#">Home</a>
@@ -28,9 +48,9 @@
         </label>
       </header>
       <div class="content" style="margin-top: 8%;">
-        <div class="info">
+        <div class="navigation">
           <h2>Plant Trees <br><span>Save Rain</span></h2>
-          <p> "Plant trees to bring the rains and get rid of the summer's heat.” - Trees help reduce and moderate the temperature and climate, which is why it is so important that we have more of them</p>
+          <p> "Plant trees to bring the rains and get rid of the summer's heat.” - Trees help reduce and moderate the temperature and climate, which is why it is so important that we have more of them</p><br>
           <a href="#about" class="info-btn">More info</a>
         </div>
       </div>
