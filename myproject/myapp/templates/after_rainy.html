@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{ url 'after_rainy.css' }">
+    <link rel="stylesheet" href="{% static 'css/after_rainy.css' %}">
     <title>Rainy Day</title>
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 3 rem; font-weight: bolder">RAINY DAY</h1>
-    <div class="rainyimg">
-        <img src="{ static 'rainy.jpg' }" alt="Vasanth" style="height: 550px; width: 550px; margin-left: 32%">
-    </div>
     <div>
-        <h2><center> Tomorrow is going to be <span style="font-style: italic; font-weight: bolder;">rainy day</span>. So enjoy yourselves 
-        with a cup of coffee and hot snack </center></h2>
-   </div>
+        {% if result == 1 %}
+            <img src="{% static 'image/4.png' %}" alt="Result 1 Image">
+        {% elif result == 2 %}
+            <img src="{% static 'image/5.png' %}" alt="Result 2 Image">
+        {% else %}
+            <img src="{% static 'image/6.png' %}" alt="Default Image">
+        {% endif %}
+    </div>
+    
+    
 </body>
 </html>
