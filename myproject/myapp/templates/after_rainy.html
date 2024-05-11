@@ -28,12 +28,16 @@
 <body class="custom-background">
     <div>
         {% if result == 1 %}
-            <img src="{% static 'image/4.png' %}" alt="Result 1 Image" class="chart">
+            <img src="{% static 'image/rice.jpeg' %}" alt="Result 1 Image" class="chart">            
         {% elif result == 2 %}
             <img src="{% static 'image/5.png' %}" alt="Result 2 Image" class="chart">
         {% else %}
             <img src="{% static 'image/6.png' %}" alt="Default Image" class="chart">
         {% endif %}
+        <h1> Recommend Crop</h1>
+        <h1>{{ crop_recommendation }} is the best crop to be cultivated right there</h1>
+
+
     </div>
     
     
