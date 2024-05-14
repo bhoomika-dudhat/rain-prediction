@@ -3,14 +3,16 @@
 <html lang="en">
 <head>
     <style>
-       .custom-background {
-        background: linear-gradient(#0004, #0004),
-        url('https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
-        no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-        width: 100vw;
-      }
+    .custom-background {
+    background: linear-gradient(#0004, #0004),
+    url('https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+    no-repeat;
+    background-size: cover;
+    background-color: darkgray;
+    min-height: 100vh;
+    width: 100vw;
+    }
+  
 
     </style>
     
@@ -25,57 +27,57 @@
     <title>Rain Prediction</title>
 </head>
 <body class="custom-background">
-    <section id="prediction-form" class ="custom-background">
-        <form class="form" action="/after_rainy_page/", method="POST">
+    <section id="prediction-form" class="cutom-saction">
+        <form class="formpredict" action="/after_rainy_page/", method="POST">
             {% csrf_token %}
             <h1 class="my-3 text-center">Predictor</h1>
             <div class="row">
                 <div class="col-md-6 my-2">
                     <div class="md-form">
-                        <label for="Nitrogen" class="int">Nitrogen</label>
-                        <input type="number" class="form-control" id="Nitrogen" name="Nitrogen" required>
+                        <label for="Nitrogen" class="float">Nitrogen</label>
+                        <input type="float" class="form-control" id="Nitrogen" name="Nitrogen" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="Phosphorus" class="Phosphorus">Phosphorus</label>
-                        <input type="text" class="form-control" id="Phosphorus" name="Phosphorus" required>
+                        <input type="float" class="form-control" id="Phosphorus" name="Phosphorus" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="Potessium" class="Potessium">Potessium</label>
-                        <input type="text" class="form-control" id="Potessium" name="Potessium" required>
+                        <input type="float" class="form-control" id="Potessium" name="Potessium" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="Temperature" class="Temperature">Temperature</label>
-                        <input type="number" class="form-control" id="Temperature" name="Temperature" required>
+                        <input type="float" class="form-control" id="Temperature" name="Temperature" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="Humidity" class="Humidity">Humidity</label>
-                        <input type="text" class="form-control" id="Humidity" name="Humidity" required>
+                        <input type="float" class="form-control" id="Humidity" name="Humidity" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="pH" class="pH">pH</label>
-                        <input type="text" class="form-control" id="pH" name="pH" required>
+                        <input type="float" class="form-control" id="pH" name="pH" required>
                     </div>
                 </div>
                 <div class="col-md-6 my-2">
                     <div class="md-form">
                         <label for="Rainfall" class="Rainfall">Rainfall</label>
-                        <input type="text" class="form-control" id="Rainfall" name="Rainfall" required>
+                        <input type="float" class="form-control" id="Rainfall" name="Rainfall" required>
                     </div>
                 </div>
                 <br>
                 <div>
                     <div class="col-md-6 my-2 d-flex align-items-end justify-content-around">
-                        <button type="submit" class="btn btn-info button" style="margin-left: 80%;">Get Recommendation</button>
+                        <button type="submit" class="btn btn-info button" style="margin-left: 60%;">Get Recommendation</button>
                     </div>
                 </div>
             </div>

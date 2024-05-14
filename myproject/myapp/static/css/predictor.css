@@ -1,31 +1,32 @@
 body {
-    background-color: white;
+    background-color: darkgray;
     font-family: 'Poppins', sans-serif;
 }
 /* .form {
-    background-color: white;
+    background-color: darkgray;
     width: 70vw;
     margin: 50px auto;
     padding: 20px 50px;
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     border-radius: 12px;
 }
 .form h1 {
-    color: white;
-} */
-.form {
-    background-color: rgba(255, 255, 255, 0.5); 
+    color: darkgray;
+}  */
+.cutom-saction{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    height: auto;
+}
+.formpredict {
+    background-color: darkgray; 
     padding: 20px;
     border-radius: 8px;
     font-style: normal;
-    
-   
-}
-
-.form h1 {
-    color: white;
-    
-   
+    }
+.formpredict h1 {
+    color: black;
 }
 
 .button {

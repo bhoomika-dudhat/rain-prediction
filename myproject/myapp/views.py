@@ -41,11 +41,6 @@ def after_rainy_page(request):
         else:
             print("Sorry are not able to recommend a proper crop for this environment")        
                         
-    #     if 1 <= nitrogen and phosphorus <= 20:
-    #         result = 1
-    #     else:
-    #         result = 2
-    # else:
-    #     result = 3
 
     return render(request, 'after_rainy.html', {'result': result, 'crop_recommendation': crop})
+
