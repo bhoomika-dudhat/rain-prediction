@@ -3,25 +3,19 @@
 <html lang="en">
 <head>
     <style>
-        .custom-background {
-            background: linear-gradient(#4444, #4444), 
-            url('https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 
-            no-repeat;
-            background-size: cover;
-            min-height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #FFD700;
-            font-style: oblique;
-            text-align: center;
+        .body {
+            background-color: #5fc0c5d0;
+            /* font-family: 'Poppins', sans-serif; */
         }
-
         img.chart {
+            justify-content: center;
             width: 40%;
             margin-top: 5%;
+            /* margin-left: 25%; */
             height: auto;
+            font-style: oblique;
+            text-align: center;
+
         }
     </style>
      
@@ -32,7 +26,7 @@
     <link rel="stylesheet" href="{% static 'css/after_rainy.css' %}">
     <title>Rainy Day</title>
 </head>
-<body class="custom-background" >
+<body class="body">
     <div>
         {% if result == 1 %}
             <img src="{% static 'image/rice.jpeg' %}" alt="Result 1 Image" class="chart">            
@@ -61,25 +55,25 @@
         {% elif result == 13 %}
             <img src="{% static 'image/banana.jpg' %}" alt="Result 13 Image" class="chart">
         {% elif result == 14 %}
-            <img src="{% static 'image/pomegranate.jpg' %}" alt="Result 14 Image" class="chart">
+            <img src="{% static 'image/Pomegranate.jpg' %}" alt="Result 14 Image" class="chart">
         {% elif result == 15 %}
-            <img src="{% static 'image/lentil.jpg' %}" alt="Result 15 Image" class="chart">
+            <img src="{% static 'image/Lentil.jpg' %}" alt="Result 15 Image" class="chart">
         {% elif result == 16 %}
-            <img src="{% static 'image/blackgram.jpg' %}" alt="Result 16 Image" class="chart">
+            <img src="{% static 'image/Blackgram.jpg' %}" alt="Result 16 Image" class="chart">
         {% elif result == 17 %}
-            <img src="{% static 'image/mungbean.jpg' %}" alt="Result 17 Image" class="chart">
+            <img src="{% static 'image/Mungbean.jpg' %}" alt="Result 17 Image" class="chart">
         {% elif result == 18 %}
-            <img src="{% static 'image/mothbeans.jpg' %}" alt="Result 18 Image" class="chart">
+            <img src="{% static 'image/Mothbeans.jpg' %}" alt="Result 18 Image" class="chart">
         {% elif result == 19 %}
-            <img src="{% static 'image/pigeonpeas.jpg' %}" alt="Result 19 Image" class="chart">
+            <img src="{% static 'image/Pigeonpeas.jpg' %}" alt="Result 19 Image" class="chart">
         {% elif result == 20 %}
-            <img src="{% static 'image/kidneybeans.jpeg' %}" alt="Result 20 Image" class="chart">
+            <img src="{% static 'image/Kidneybeans.jpeg' %}" alt="Result 20 Image" class="chart">
         {% elif result == 21 %}
-            <img src="{% static 'image/chickpea.jpg' %}" alt="Result 21 Image" class="chart">
+            <img src="{% static 'image/Chickpea.jpg' %}" alt="Result 21 Image" class="chart">
         {% elif result == 22 %}
-            <img src="{% static 'image/coffee.jpg' %}" alt="Result 22 Image" class="chart">
+            <img src="{% static 'image/Coffee.jpg' %}" alt="Result 22 Image" class="chart">
         {% else %}
-            <img src="{% static 'image/default.jpg' %}" alt="Default Image" class="chart">
+            <img src="{% static 'image/default.png' %}" alt="Default Image" class="chart">
         {% endif %}
         <h1>Recommend Crop</h1>
         <h1>{{ crop_recommendation }} is the best crop to be cultivated right there</h1>
@@ -88,3 +82,4 @@
     
 </body>
 </html>
+

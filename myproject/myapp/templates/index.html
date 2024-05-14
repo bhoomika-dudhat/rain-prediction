@@ -19,7 +19,7 @@
         padding: 2px 15px;
         border-radius: 20px;
         transition: 0.3s;
-        transition-property: background;
+        
       }
   </style>
     <meta charset="utf-8">
@@ -38,8 +38,8 @@
         <div class="navigation">
           <a href="#">Home</a>
           <a href="#about">About Rainy Brain</a>
-          <a href="#dashboard">Dashboard</a>
-          <a href="#info">Developer</a>
+          <!-- <a href="#dashboard">Dashboard</a>
+          <a href="#info">Developer</a> -->
           <a href="{% url 'predictor_page' %}">Predictor</a>
         </div>
         <label for="check">
@@ -49,8 +49,10 @@
       </header>
       <div class="content" style="margin-top: 8%;">
         <div class="navigation">
-          <h2>Plant Trees <br><span>Save Rain</span></h2>
-          <p> "Plant trees to bring the rains and get rid of the summer's heat.” - Trees help reduce and moderate the temperature and climate, which is why it is so important that we have more of them</p><br>
+          <h2>Empowering Farmers with Smart Crop Choices</h2>
+          <p>Agriculture is a vital sector globally, and the efficiency of crop 
+            production significantly impacts food security and economic stability. However, selecting the appropriate crop for cultivation is a complex decision influenced by various factors such as soil nutrients, climate conditions, and rainfall patterns. This project aims to develop a Crop Recommendation System leveraging machine learning models to assist farmers in making informed decisions regarding crop selection.
+          </p><br>
           <a href="#about" class="info-btn">More info</a>
         </div>
       </div>
@@ -58,28 +60,27 @@
 
     <section id="about">
       <h2>About Rainy Brain</h2>
-      <p class="about-content" style="text-align: center;">Rainy Brain is a web app which has 
-      a Machine Learning model running at the back. The purpose of developing this app is to 
-      predict whether it will rain the next day or not. This model is based on the Rain Prediction
-      in Australia dataset. The codes for this project can be checked in my  More than 80% of Australia has an annual rainfall of less than 
-      600 mm which is less among the all continents other than Antartica which recieves less 
-      rainfall. A place inland near Lake Eyre would only receive 81 mm of rain annually. The 
-      average annual rainfall in the Australian desert is low, ranging from 81 to 250 mm. 
-      Thunderstorms are relatively common in the region, with an annual average of 15 to 20 
-      thunderstorms. The southern parts of Australia get the usual westerly winds and 
-      rain-bearing cold fronts that come when high–pressure systems move towards northern 
-      Australia during winter. Cold snaps may bring frosts inland, though temperatures near the
-      coast are mild or near mild all year round. Summers in southern Australia are generally 
-      dry and hot with coastal sea breezes. During a lengthy dry spell, hot and dry winds from 
-      the interior can cause bushfires in some southern and eastern states, though most commonly
-      Victoria and New South Wales. The tropical areas of northern Australia have a wet summer 
-      because of the monsoon. During "the wet", typically October to April, humid north-westerly
-       winds bring showers and thunderstorms. Occasionally, tropical cyclones can bring heavy 
-       rainfall to tropical coastal regions, which is also likely to reach further inland. 
+      <p class="about-content" style="text-align: center;">The primary objective of this project is to 
+        build a robust system that recommends suitable 
+        crops based on six key factors: nitrogen, phosphorus, potassium, temperature, 
+        humidity, pH level, and rainfall. By analyzing these factors, the system 
+        predicts the most compatible crops for a given geographical location and environmental conditions.
+        The project utilizes a dataset containing information about different crops and their ideal growing conditions. Various machine learning algorithms are 
+        employed to create predictive models capable of classifying crops based on input parameters. 
+        The models explored include Logistic Regression, Naive Bayes, Support Vector Machines, K-Nearest 
+        Neighbors, Decision Trees, Extra Trees, Random Forest, Bagging, Gradient Boosting, and AdaBoost classifiers. 
+        These models are trained on historical data to learn the relationships between the input factors and the suitable crops.
+        The Crop Recommendation System offers a valuable tool for farmers to optimize crop selection and improve agricultural 
+        productivity. By considering multiple factors affecting crop growth, the system empowers farmers to make informed decisions,
+         ultimately leading to enhanced yields and sustainable farming practices. Continued refinement and expansion of the system 
+         can further enhance its accuracy and utility in diverse agricultural contexts.
+
+
+
       </p>
     </section>
 
-    <section id="dashboard">
+    <!-- <section id="dashboard">
       <h2>Dashboard</h2>
       <p>This dashboard is done using a software called PowerBI which is a product of Microsoft.
         Here I have just attached the images of the dashboard because PowerBI needs oraganizational
@@ -97,10 +98,10 @@
             <img class="small-image" src="{% static 'image/8.png' %}" alt="8">
             <img class="small-image" src="{% static 'image/9.png' %}" alt="9">
         </div>        
-    </section>
+    </section> -->
     
-    <section id="info">
-    </section>
+    <!-- <section id="info">
+    </section> -->
 
   </body>
 </html>
