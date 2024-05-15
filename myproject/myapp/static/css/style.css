@@ -22,15 +22,15 @@ section a {
 	color: #fff;
 }
 
-section:nth-child(1) {
+/* section:nth-child(1) {
 	justify-content: flex-start;
-	background: linear-gradient(#0004, #0004),
+	 background: linear-gradient(#0004, #0004),
 		url(https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-			no-repeat;
+			no-repeat; 
 	background-size: cover;
 	background-position: center;
 	color: #fff;
-}
+} */
 
 section:nth-child(1) .media-icons i {
 	color: var(--primary-color);

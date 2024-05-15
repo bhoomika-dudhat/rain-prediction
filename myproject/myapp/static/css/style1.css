@@ -7,7 +7,7 @@
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
-	--primary-color: #00b7c2;
+	--primary-color: #0dc95b;
 }
 
 section {
@@ -22,15 +22,13 @@ section a {
 	color: #fff;
 }
 
-section:nth-child(1) {
+/* section:nth-child(1) {
 	justify-content: flex-start;	
-	background: linear-gradient(#0004, #0004),
-		url(https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-			no-repeat;
+	
 	background-size: cover;
 	background-position: center;
 	color: #fff;
-}
+} */
 
 section:nth-child(1) .media-icons i {
 	color: var(--primary-color);

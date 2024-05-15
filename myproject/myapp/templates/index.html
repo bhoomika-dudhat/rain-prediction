@@ -3,13 +3,14 @@
 <html lang="en" dir="ltr">
   <head>
     <style>
-      .custom-background {
+      .custom-backgroundbh {
           background: linear-gradient(#0004, #0004),
           url('https://career.webindia123.com/career/options/images/agricultural-science.jpg')
           no-repeat;
           background-size: cover;
           min-height: 100vh;
           width: 100vw;
+          color: #fff;
       }
       header .navigation a {
         font-size: 18px;
@@ -31,11 +32,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainy Brain</title>
     <link rel="stylesheet" href="{% static 'css/style1.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
   </head>
   <body>
 
-    <section class="custom-background">
+    <section class="custom-backgroundbh">
       <input type="checkbox" id="check">
       <header class="navigation">
 
@@ -64,7 +65,7 @@
     </section>
 
     <section id="about">
-      <h2>About Crop Recommendation</h2>
+      <h2 style="font-size: 50px;">About Crop Recommendation</h2>
       <p class="about-content" style="text-align: center;">The primary objective of this project is to 
         build a robust system that recommends suitable 
         crops based on six key factors: nitrogen, phosphorus, potassium, temperature, 
